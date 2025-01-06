@@ -1,0 +1,10 @@
+COPYING
+README.md
+setup.py
+sqgturb/__init__.py
+sqgturb/enkf_utils.py
+sqgturb/sqg.py
+sqgturb.egg-info/PKG-INFO
+sqgturb.egg-info/SOURCES.txt
+sqgturb.egg-info/dependency_links.txt
+sqgturb.egg-info/top_level.txt

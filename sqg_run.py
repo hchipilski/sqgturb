@@ -1,5 +1,5 @@
 import matplotlib
-matplotlib.use('qtagg')
+#matplotlib.use('qtagg')
 from sqgturb import SQG, rfft2, irfft2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -19,17 +19,17 @@ import os
 #dt = 300
 #diff_efold = 86400./8.
 #
-#N = 128
-#dt = 600
-#diff_efold = 86400./3.
+N = 128
+dt = 600
+diff_efold = 86400./3.
 
-N = 96
-dt = 900
-diff_efold = 86400./2.
+# N = 96
+# dt = 900
+# diff_efold = 86400./2.
 
-N = 64
-dt = 900    
-diff_efold = 86400./2.
+# N = 64
+# dt = 900    
+# diff_efold = 86400./2.
 
 norder = 8 # order of hyperdiffusion
 dealias = True # dealiased with 2/3 rule?
@@ -86,7 +86,7 @@ nsteps = int(tmax/outputinterval) # number of time steps to animate
 model.timesteps = int(outputinterval/model.dt)
 savedata = 'sqgu17p5_N%s_6hrly.nc' % N # save data plotted in a netcdf file.
 #savedata = None # don't save data
-plot = True # animate data as model is running?
+plot = False # animate data as model is running?
 
 if savedata is not None:
     from netCDF4 import Dataset

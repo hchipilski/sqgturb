@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: sqgturb
+Version: 0.1
+Summary: A program for simulating surface quasi-geostropic turbulence
+Home-page: https://github.com/jswhit/sqgturb
+Author: Jeff Whitaker
+Author-email: jeffrey dot s dot whitaker at noaa dot gov
+Requires: numpy
+License-File: COPYING
