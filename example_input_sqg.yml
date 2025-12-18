@@ -1,0 +1,33 @@
+# example_input_sqg.yml (relevant entries)
+ncores: 52
+nsimu: 1
+run_simuls_in_parallel: True
+
+# HMM / assimilation
+T: 1800 #120 #200 * timesteps = 300 * 4
+dgx: 96
+dgy: 96
+nlevs: 2
+
+# SQG model parameters
+use_SQG: True
+precision: 'single'
+
+add_noise_sig_every_dt: True
+
+# ensembles & MCMC
+nforecast: 1
+mcmc_N: 1
+burn_in: 0
+sig_mcmc_loc: 0.001
+
+
+# domain partitioning (keep your existing partition data)
+num_subdomains: 576 #1152 #2304 #800,
+
+# files & dirs
+lsmcmc_dir: ./example_lsmcmc/
+lsmcmc_dir_data: ./example_lsmcmc_data/
+nature_run_file: ./example_lsmcmc_data/sqg_lsmcmc_nature_N96_1hrly.nc
+obs_file: ./example_lsmcmc_data/sqg_lsmcmc_obs_N96_1hrly.nc
+fname_ncout: ./example_lsmcmc/sqg_lsmcmc_out_N96_1hrly.nc
